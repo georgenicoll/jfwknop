@@ -18,15 +18,15 @@
  */
 package com.cipherdyne.jfwknop;
 
-import javax.swing.UIManager;
-import javax.swing.UnsupportedLookAndFeelException;
+import javax.swing.*;
+import javax.swing.plaf.nimbus.NimbusLookAndFeel;
 
 public class MainClass {
 
     public static void main(final String[] args) {
 
         try {
-            UIManager.setLookAndFeel ( "com.alee.laf.WebLookAndFeel" );
+            UIManager.setLookAndFeel(NimbusLookAndFeel.class.getName());
         } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | UnsupportedLookAndFeelException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
